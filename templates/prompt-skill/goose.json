@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "identifier": "com.example.my-skill",
+  "version": "1.0.0",
+  "name": "My Skill",
+  "summary": "A concise description of what this Skill does.",
+  "entry": "SKILL.md",
+  "permissions": [
+    "prompt.read",
+    "resource.read"
+  ],
+  "author": "Your Name"
+}
