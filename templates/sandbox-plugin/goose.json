@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "kind": "sandboxScript",
+  "identifier": "com.example.my-sandbox-plugin",
+  "version": "1.0.0",
+  "name": "My Sandbox Plugin",
+  "summary": "A concise description of what this Plugin does.",
+  "instructionEntry": "SKILL.md",
+  "scriptEntry": "scripts/main.js",
+  "permissions": [
+    "sandbox.execute"
+  ],
+  "secrets": [],
+  "author": "Your Name"
+}
