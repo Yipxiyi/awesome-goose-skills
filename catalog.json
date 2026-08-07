@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "catalogRevision": "2026-08-07.1",
+  "updatedAt": "2026-08-07T03:32:00Z",
+  "categories": [
+    {
+      "id": "productivity",
+      "name": "Productivity"
+    },
+    {
+      "id": "people-communication",
+      "name": "People & Communication"
+    },
+    {
+      "id": "travel-location",
+      "name": "Travel & Location"
+    },
+    {
+      "id": "weather-environment",
+      "name": "Weather & Environment"
+    },
+    {
+      "id": "health-fitness",
+      "name": "Health & Fitness"
+    }
+  ],
+  "discovery": {
+    "hero": [
+      "goose.system.reminders",
+      "goose.system.maps-location",
+      "goose.system.health",
+      "goose.system.weather"
+    ],
+    "featured": [
+      "goose.system.calendar",
+      "goose.system.contacts",
+      "goose.system.message-mail"
+    ],
+    "recentlyUpdated": {
+      "strategy": "updatedAt",
+      "limit": 12
+    },
+    "collections": [
+      {
+        "id": "everyday-essentials",
+        "title": "Everyday Essentials",
+        "description": "Useful system capabilities for planning, communication, and daily information.",
+        "items": [
+          "goose.system.reminders",
+          "goose.system.calendar",
+          "goose.system.weather",
+          "goose.system.contacts"
+        ]
+      },
+      {
+        "id": "on-the-go",
+        "title": "On the Go",
+        "description": "Location, routes, weather, and communication capabilities for tasks away from your desk.",
+        "items": [
+          "goose.system.maps-location",
+          "goose.system.weather",
+          "goose.system.message-mail"
+        ]
+      }
+    ]
+  },
+  "packages": [
+    {
+      "identifier": "goose.system.reminders",
+      "version": "2.0.0",
+      "name": "Reminders",
+      "description": "List, create, and complete reminders through the system Reminders store.",
+      "author": {
+        "name": "Goose"
+      },
+      "keywords": [
+        "reminders",
+        "tasks",
+        "productivity"
+      ],
+      "interface": {
+        "displayName": "Reminders",
+        "shortDescription": "List, create, and complete reminders.",
+        "longDescription": "Use Apple's Reminders store through Goose to inspect bounded reminder ranges, create reminders with explicit details, and mark reminders complete.",
+        "developerName": "Goose",
+        "category": "Productivity",
+        "capabilities": [
+          "List Reminders",
+          "Create Reminder",
+          "Complete Reminder"
+        ],
+        "defaultPrompts": [
+          "What reminders do I have today?",
+          "Remind me tomorrow at 9:00 AM to send the report.",
+          "Mark my grocery reminder complete."
+        ],
+        "artwork": {
+          "source": "app-bundled"
+        }
+      },
+      "distribution": {
+        "type": "bundled",
+        "runtimeIdentifier": "reminders"
+      },
+      "updatedAt": "2026-08-07T00:00:00Z"
+    },
+    {
+      "identifier": "goose.system.calendar",
+      "version": "1.0.0",
+      "name": "Calendar",
+      "description": "Create events and inspect bounded Calendar ranges.",
+      "author": {
+        "name": "Goose"
+      },
+      "keywords": [
+        "calendar",
+        "events",
+        "availability",
+        "productivity"
+      ],
+      "interface": {
+        "displayName": "Calendar",
+        "shortDescription": "Create events and inspect your calendar.",
+        "longDescription": "Use Apple's Calendar data through Goose to create events, query explicit time ranges, and find availability without inventing attendees or invitations.",
+        "developerName": "Goose",
+        "category": "Productivity",
+        "capabilities": [
+          "Create Calendar Event",
+          "Query Calendar Events",
+          "Find Calendar Availability"
+        ],
+        "defaultPrompts": [
+          "What's on my calendar tomorrow?",
+          "Find a free hour on Friday afternoon.",
+          "Add a calendar event for the project review tomorrow at 2:00 PM."
+        ],
+        "artwork": {
+          "source": "app-bundled"
+        }
+      },
+      "distribution": {
+        "type": "bundled",
+        "runtimeIdentifier": "calendar"
+      },
+      "updatedAt": "2026-08-07T00:00:00Z"
+    },
+    {
+      "identifier": "goose.system.contacts",
+      "version": "1.0.0",
+      "name": "Contacts",
+      "description": "Search and conservatively save system contacts.",
+      "author": {
+        "name": "Goose"
+      },
+      "keywords": [
+        "contacts",
+        "people",
+        "address-book"
+      ],
+      "interface": {
+        "displayName": "Contacts",
+        "shortDescription": "Search and save contacts.",
+        "longDescription": "Search Apple's Contacts store and save or update a contact only when the user explicitly asks and provides usable contact information.",
+        "developerName": "Goose",
+        "category": "People & Communication",
+        "capabilities": [
+          "Search Contacts",
+          "Save Contact"
+        ],
+        "defaultPrompts": [
+          "Find Alex in my contacts.",
+          "Save this phone number to Taylor's contact."
+        ],
+        "artwork": {
+          "source": "app-bundled"
+        }
+      },
+      "distribution": {
+        "type": "bundled",
+        "runtimeIdentifier": "contacts"
+      },
+      "updatedAt": "2026-08-07T00:00:00Z"
+    },
+    {
+      "identifier": "goose.system.weather",
+      "version": "1.0.0",
+      "name": "Weather",
+      "description": "Read current, hourly, and daily Apple Weather conditions.",
+      "author": {
+        "name": "Goose"
+      },
+      "keywords": [
+        "weather",
+        "forecast",
+        "location"
+      ],
+      "interface": {
+        "displayName": "Weather",
+        "shortDescription": "Current conditions and forecasts.",
+        "longDescription": "Read current, hourly, and daily Apple Weather conditions for named places or, with permission, the user's current location.",
+        "developerName": "Goose",
+        "category": "Weather & Environment",
+        "capabilities": [
+          "Current Weather",
+          "Hourly Weather Forecast",
+          "Daily Weather Forecast"
+        ],
+        "defaultPrompts": [
+          "What's the weather here today?",
+          "Will it rain in Singapore this evening?",
+          "Show me the forecast for the next five days."
+        ],
+        "artwork": {
+          "source": "app-bundled"
+        }
+      },
+      "distribution": {
+        "type": "bundled",
+        "runtimeIdentifier": "weather"
+      },
+      "updatedAt": "2026-08-07T00:00:00Z"
+    },
+    {
+      "identifier": "goose.system.maps-location",
+      "version": "1.0.0",
+      "name": "Maps & Location",
+      "description": "Use one-shot location, search nearby places, plan routes, and hand approved navigation to Apple Maps.",
+      "author": {
+        "name": "Goose"
+      },
+      "keywords": [
+        "maps",
+        "location",
+        "places",
+        "routes",
+        "navigation"
+      ],
+      "interface": {
+        "displayName": "Maps & Location",
+        "shortDescription": "Find places, plan routes, and open navigation.",
+        "longDescription": "Use one-shot location when needed, search structured place results, plan routes, and hand approved navigation off to Apple Maps.",
+        "developerName": "Goose",
+        "category": "Travel & Location",
+        "capabilities": [
+          "Get Current Location",
+          "Search Places",
+          "Plan Route",
+          "Open Navigation"
+        ],
+        "defaultPrompts": [
+          "Find coffee shops near me.",
+          "Plan a walking route to the nearest MRT station.",
+          "Open navigation to the place we just selected."
+        ],
+        "artwork": {
+          "source": "app-bundled"
+        }
+      },
+      "distribution": {
+        "type": "bundled",
+        "runtimeIdentifier": "mapsLocation"
+      },
+      "updatedAt": "2026-08-07T00:00:00Z"
+    },
+    {
+      "identifier": "goose.system.message-mail",
+      "version": "1.0.0",
+      "name": "Message & Mail",
+      "description": "Prepare editable Messages and Mail drafts in Apple's system composers.",
+      "author": {
+        "name": "Goose"
+      },
+      "keywords": [
+        "messages",
+        "mail",
+        "email",
+        "communication"
+      ],
+      "interface": {
+        "displayName": "Message & Mail",
+        "shortDescription": "Prepare editable message and email drafts.",
+        "longDescription": "Prepare Messages and Mail content in Apple's system composers. Goose opens an editable composer after approval and does not claim a message was sent without a structured result.",
+        "developerName": "Goose",
+        "category": "People & Communication",
+        "capabilities": [
+          "Compose Message",
+          "Compose Email"
+        ],
+        "defaultPrompts": [
+          "Draft a message to Sam saying I'm running ten minutes late.",
+          "Prepare an email to the team with this week's update."
+        ],
+        "artwork": {
+          "source": "app-bundled"
+        }
+      },
+      "distribution": {
+        "type": "bundled",
+        "runtimeIdentifier": "messageMail"
+      },
+      "updatedAt": "2026-08-07T00:00:00Z"
+    },
+    {
+      "identifier": "goose.system.health",
+      "version": "2.0.0",
+      "name": "Health",
+      "description": "Read objective activity, sleep, and workout summaries from HealthKit without storing raw samples.",
+      "author": {
+        "name": "Goose"
+      },
+      "keywords": [
+        "health",
+        "healthkit",
+        "steps",
+        "sleep",
+        "workouts"
+      ],
+      "interface": {
+        "displayName": "Health",
+        "shortDescription": "Read objective HealthKit summaries.",
+        "longDescription": "Read bounded HealthKit summaries for activity, steps, sleep, and workouts without storing raw samples or turning objective values into diagnosis or health advice.",
+        "developerName": "Goose",
+        "category": "Health & Fitness",
+        "capabilities": [
+          "Today's Health Summary",
+          "Get Steps",
+          "Get Sleep",
+          "Get Workouts",
+          "Health Summary"
+        ],
+        "defaultPrompts": [
+          "Summarize my activity today.",
+          "How many steps did I take this week?",
+          "Show my recent workouts."
+        ],
+        "artwork": {
+          "source": "app-bundled"
+        }
+      },
+      "distribution": {
+        "type": "bundled",
+        "runtimeIdentifier": "health"
+      },
+      "updatedAt": "2026-08-07T00:00:00Z"
+    }
+  ]
+}
