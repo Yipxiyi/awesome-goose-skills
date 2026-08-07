@@ -1,0 +1,19 @@
+{
+  "identifier": "goose.system.calendar",
+  "type": "system-tool",
+  "description": "Access calendar capabilities provided by Goose Runtime.",
+  "actions": [
+    {
+      "name": "calendar.create",
+      "description": "Create a calendar event",
+      "requiredInput": ["title", "startDate"]
+    },
+    {
+      "name": "calendar.query",
+      "description": "Query calendar events",
+      "requiredInput": ["startDate", "endDate"]
+    }
+  ],
+  "permissions": ["calendar"],
+  "runtime": "native-goose"
+}
