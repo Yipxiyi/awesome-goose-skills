@@ -1,0 +1,42 @@
+{
+  "identifier": "com.example.my-skill",
+  "version": "1.0.0",
+  "name": "My Skill",
+  "description": "A concise description of what this Skill does.",
+  "author": {
+    "name": "Your Name"
+  },
+  "homepage": "https://example.com/my-skill",
+  "repository": "https://github.com/example/my-skill",
+  "license": "MIT",
+  "keywords": [
+    "example",
+    "productivity"
+  ],
+  "interface": {
+    "displayName": "My Skill",
+    "shortDescription": "A short Capability Store description.",
+    "longDescription": "A longer explanation of the workflow, intended users, and important limitations.",
+    "developerName": "Your Name",
+    "category": "Productivity",
+    "capabilities": [
+      "Analyze",
+      "Generate"
+    ],
+    "defaultPrompts": [
+      "Use My Skill to help me with this task."
+    ],
+    "brandColor": "#2563EB",
+    "artwork": {
+      "icon": "https://example.com/my-skill/icon.png",
+      "background": "https://example.com/my-skill/background.png"
+    }
+  },
+  "distribution": {
+    "type": "release",
+    "url": "https://github.com/example/my-skill/releases/download/v1.0.0/my-skill.zip",
+    "packageDigest": "REPLACE_WITH_SHA256"
+  },
+  "minGooseVersion": "0.1.0",
+  "updatedAt": "2026-08-07T00:00:00Z"
+}
